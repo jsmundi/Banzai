@@ -1,16 +1,9 @@
-sudo: required
 language: node_js
 node_js:
-  - "0.10"
-  
+  - "7"
 before_install:
-  - "curl -L https://git.io/ejPSng | /bin/sh"
-
+  - "curl -L https://raw.githubusercontent.com/arunoda/travis-ci-laika/6a3a7afc21be99f1afedbd2856d060a02755de6d/configure.sh | /bin/sh"
+services:
+  - mongodb
 env:
-  - CXX=g++-4.8
-addons:
-  apt:
-    sources:
-      - ubuntu-toolchain-r-test
-    packages:
-      - g++-4.8
+  - LAIKA_OPTIONS="-t 5000"
