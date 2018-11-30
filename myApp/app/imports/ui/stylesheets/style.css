@@ -1,0 +1,5 @@
+body {
+  padding-top: 61px;  /* Move body of page below navbar. */
+  background: url('/images/background.jpg') no-repeat;
+  background-size: cover;
+}
