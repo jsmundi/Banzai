@@ -1,0 +1,144 @@
+<template name="List_Stuff_Page">
+  {{#If_Logged_In}}
+    <div class="ui text container">
+      {{#if Template.subscriptionsReady}}
+        <style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#aabcfe;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:9px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#669;background-color:#e8edff;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:9px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#039;background-color:#b9c9fe;}
+.tg .tg-oe15{background-color:#ffffff;border-color:#ffffff;text-align:left;vertical-align:top}
+.tg .tg-kaak{background-color:#ffffff;border-color:#ffffff;text-align:left;vertical-align:top}
+.tg .tg-l93j{font-weight:bold;font-size:16px;border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-wk8r{background-color:#ffffff;border-color:#ffffff;text-align:center;vertical-align:top}
+.tg .tg-rprd{background-color:#b9c9fe;border-color:#b0c1ff;text-align:center}
+.tg .tg-wtks{background-color:#D2E4FC;font-weight:bold;font-size:20px;border-color:#b0c1ff;text-align:center;vertical-align:top}
+.tg .tg-mue8{font-weight:bold;font-size:16px;background-color:#b0c1ff;border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-fnp1{background-color:#D2E4FC;font-style:italic;font-size:13px;font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;;color:#6665cd;border-color:inherit;text-align:center}
+@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}</style>
+<div class="tg-wrap"><table class="tg">
+  <tr>
+    <th class="tg-wk8r"></th>
+    <th class="tg-wk8r"></th>
+    <th class="tg-wk8r"></th>
+    <th class="tg-wk8r"></th>
+    <th class="tg-wk8r"></th>
+    <th class="tg-wk8r"></th>
+    <th class="tg-wk8r"></th>
+    <th class="tg-wk8r"></th>
+    <th class="tg-wk8r"></th>
+    <th class="tg-wk8r"></th>
+    <th class="tg-wk8r"></th>
+    <th class="tg-wk8r"></th>
+    <th class="tg-wk8r"></th>
+    <th class="tg-wk8r"></th>
+    <th class="tg-wk8r"></th>
+    <th class="tg-oe15"></th>
+    <th class="tg-oe15"></th>
+  </tr>
+  <tr>
+    <td class="tg-wtks" colspan="4">Freshman</td>
+    <td class="tg-wtks" colspan="4">Sophomore</td>
+    <td class="tg-wtks" colspan="4">Junior</td>
+    <td class="tg-wtks" colspan="4">Senior</td>
+    <td class="tg-kaak"></td>
+  </tr>
+  <tr>
+    <td class="tg-mue8" colspan="2">Fall</td>
+    <td class="tg-l93j" colspan="2">Spring</td>
+    <td class="tg-mue8" colspan="2">Fall</td>
+    <td class="tg-l93j" colspan="2">Spring</td>
+    <td class="tg-mue8" colspan="2">Fall</td>
+    <td class="tg-l93j" colspan="2">Spring</td>
+    <td class="tg-mue8" colspan="2">Fall</td>
+    <td class="tg-l93j" colspan="2">Spring</td>
+    <td class="tg-oe15"></td>
+  </tr>
+  <tr>
+    <td class="tg-fnp1" colspan="2" rowspan="2"><br><a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add a new course</a></td>
+    <td class="tg-fnp1" colspan="2" rowspan="2"><br><a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add a new course</a></td>
+    <td class="tg-fnp1" colspan="2" rowspan="2"><br><a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add a new course</a></td>
+    <td class="tg-fnp1" colspan="2" rowspan="2"><br><a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add a new course</a></td>
+    <td class="tg-fnp1" colspan="2" rowspan="2"><br><a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add a new course</a></td>
+    <td class="tg-fnp1" colspan="2" rowspan="2"><br><a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add a new course</a></td>
+    <td class="tg-fnp1" colspan="2" rowspan="2"><br><a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add a new course</a></td>
+    <td class="tg-fnp1" colspan="2" rowspan="2"><br><a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add a new course</a></td>
+    <td class="tg-kaak"></td>
+  </tr>
+  <tr>
+    <td class="tg-oe15"></td>
+  </tr>
+  <tr>
+    <td class="tg-fnp1" colspan="2" rowspan="2"><br><a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add a new course</a></td>
+    <td class="tg-fnp1" colspan="2" rowspan="2"><br><a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add a new course</a></td>
+    <td class="tg-fnp1" colspan="2" rowspan="2"><br><a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add a new course</a></td>
+    <td class="tg-fnp1" colspan="2" rowspan="2"><br><a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add a new course</a></td>
+    <td class="tg-fnp1" colspan="2" rowspan="2"><br><a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add a new course</a></td>
+    <td class="tg-fnp1" colspan="2" rowspan="2"><br><a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add a new course</a></td>
+    <td class="tg-fnp1" colspan="2" rowspan="2"><br><a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add a new course</a></td>
+    <td class="tg-fnp1" colspan="2" rowspan="2"><br><a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add a new course</a></td>
+    <td class="tg-kaak"></td>
+  </tr>
+  <tr>
+    <td class="tg-oe15"></td>
+  </tr>
+  <tr>
+    <td class="tg-fnp1" colspan="2" rowspan="2"><br><a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add a new course</a></td>
+    <td class="tg-fnp1" colspan="2" rowspan="2"><br><a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add a new course</a></td>
+    <td class="tg-fnp1" colspan="2" rowspan="2"><br><a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add a new course</a></td>
+    <td class="tg-fnp1" colspan="2" rowspan="2"><br><a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add a new course</a></td>
+    <td class="tg-fnp1" colspan="2" rowspan="2"><br><a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add a new course</a></td>
+    <td class="tg-fnp1" colspan="2" rowspan="2"><br><a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add a new course</a></td>
+    <td class="tg-fnp1" colspan="2" rowspan="2"><br><a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add a new course</a></td>
+    <td class="tg-fnp1" colspan="2" rowspan="2"><br><a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add a new course</a></td>
+    <td class="tg-kaak"></td>
+  </tr>
+  <tr>
+    <td class="tg-oe15"></td>
+  </tr>
+  <tr>
+    <td class="tg-fnp1" colspan="2" rowspan="2"><br><a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add a new course</a></td>
+    <td class="tg-fnp1" colspan="2" rowspan="2"><br><a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add a new course</a></td>
+    <td class="tg-fnp1" colspan="2" rowspan="2"><br><a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add a new course</a></td>
+    <td class="tg-fnp1" colspan="2" rowspan="2"><br><a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add a new course</a></td>
+    <td class="tg-fnp1" colspan="2" rowspan="2"><br><a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add a new course</a></td>
+    <td class="tg-fnp1" colspan="2" rowspan="2"><br><a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add a new course</a></td>
+    <td class="tg-fnp1" colspan="2" rowspan="2"><br><a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add a new course</a></td>
+    <td class="tg-fnp1" colspan="2" rowspan="2"><br><a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add a new course</a></td>
+    <td class="tg-kaak"></td>
+  </tr>
+  <tr>
+    <td class="tg-oe15"></td>
+  </tr>
+  <tr>
+    <td class="tg-fnp1" colspan="2" rowspan="2"><br><a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add a new course</a></td>
+    <td class="tg-fnp1" colspan="2" rowspan="2"><br><a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add a new course</a></td>
+    <td class="tg-fnp1" colspan="2" rowspan="2"><br><a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add a new course</a></td>
+    <td class="tg-fnp1" colspan="2" rowspan="2"><br><a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add a new course</a></td>
+    <td class="tg-fnp1" colspan="2" rowspan="2"><br><a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add a new course</a></td>
+    <td class="tg-fnp1" colspan="2" rowspan="2"><br><a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add a new course</a></td>
+    <td class="tg-fnp1" colspan="2" rowspan="2"><br><a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add a new course</a></td>
+    <td class="tg-fnp1" colspan="2" rowspan="2"><br><a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add a new course</a></td>
+    <td class="tg-kaak"></td>
+  </tr>
+  <tr>
+    <td class="tg-oe15"></td>
+  </tr>
+  <tr>
+    <td class="tg-rprd" colspan="2"></td>
+    <td class="tg-rprd" colspan="2"></td>
+    <td class="tg-rprd" colspan="2"></td>
+    <td class="tg-rprd" colspan="2"></td>
+    <td class="tg-rprd" colspan="2"></td>
+    <td class="tg-rprd" colspan="2"></td>
+    <td class="tg-rprd" colspan="2"></td>
+    <td class="tg-rprd" colspan="2"></td>
+    <td class="tg-kaak"></td>
+  </tr>
+</table>
+</div>
+      {{else}}
+        {{> Loading}}
+      {{/if}}
+    </div>
+  {{/If_Logged_In}}
+</template>
