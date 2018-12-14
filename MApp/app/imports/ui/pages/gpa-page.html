@@ -1,0 +1,81 @@
+<template name="GPA_Page" xmlns="http://www.w3.org/1999/html">
+<div class="ui middle aligned centered grid text container">
+    <div class="twenty wide column">
+      <h1 style="color: #FBFBFB;">GPA Calculator</h1>
+    </div>
+  </div>
+<div class="ui middle aligned centered grid text container">
+    <form name="classes" method="post" onSubmit="{{updateCreditsGpa}}; return false">
+        <table class="ui inverted black centered celled structured table" border="0" width="468">
+            <tbody id="classes_tbody">
+            <tr>
+                <th align="center">Class</th><th align="center">Credits</th><th align="center">Letter Grade</th>
+            </tr>
+            <tr>
+                <td><input size="15"></td>
+                <td><input size="15" class="calculate"></td>
+                <td><input size="15" class="calculate"></td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+        <button class="addClass">Add Class</button>
+        <form name="results" method="post" onSubmit="return false">
+        <table border="0" width="468">
+        <tr>
+            <td style="color: white">Total Credits: <input name="total_credits" size="10"></td>
+            <td style="color: white">GPA: <input name="gpa" size="10"></td>
+            <td><input type="button" class="calculate" value = "Calculate"></td>
+        </tr>
+    </table>
+    </form>
+
+<table class="ui inverted black definition table">
+  <thead>
+  </thead>
+  <tbody>
+    <tr class="center aligned">
+      <td>Letter Grade</td>  
+      <td>A+</td>
+      <td>A</td>
+      <td>A-</td>
+      <td>B+</td>
+      <td>B</td>
+      <td>B-</td>
+      <td>C+</td>
+      <td>C</td>
+      <td>C-</td>
+      <td>D+</td>
+      <td>D</td>
+      <td>D-</td>
+      <td>F</td>
+      <td>X</td>
+      <td>P</td>
+      <td>N</td>
+      <td>T</td>
+    </tr>
+    <tr class="center aligned">
+      <td>GPA</td>  
+      <td>4.33</td>
+      <td>4.0</td>
+      <td>3.7</td>
+      <td>3.33</td>
+      <td>3.0</td>
+      <td>2.7</td>
+      <td>2.33</td>
+      <td>2.0</td>
+      <td>1.7</td>
+      <td>1.33</td>
+      <td>1.0</td>
+      <td>0.7</td>
+      <td>0.0</td>
+      <td>Dropped</td>
+      <td>Passed</td>
+      <td>No grades available</td>
+      <td>Test out</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+</template>

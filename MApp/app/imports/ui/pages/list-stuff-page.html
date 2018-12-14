@@ -1,0 +1,180 @@
+<template name="List_Stuff_Page">
+  {{#If_Logged_In}}
+  <div class="ui middle aligned centered grid text container">
+    <div class="twenty wide column">
+      <h1 style="color: #FBFBFB;">Personal Scheduler</h1>
+    </div>
+  </div>
+    <div class="ui middle aligned centered grid text container">
+      {{#if Template.subscriptionsReady}}
+        <style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#aabcfe;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:9px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#669;background-color:#e8edff;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:9px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#039;background-color:#b9c9fe;}
+.tg .tg-oe15{background-color:#ffffff;border-color:#ffffff;text-align:left;vertical-align:top}
+.tg .tg-kaak{background-color:#ffffff;border-color:#ffffff;text-align:left;vertical-align:top}
+.tg .tg-l93j{font-weight:bold;font-size:16px;border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-wk8r{background-color:#ffffff;border-color:#ffffff;text-align:center;vertical-align:top}
+.tg .tg-rprd{background-color:#b9c9fe;border-color:#b0c1ff;text-align:center}
+.tg .tg-wtks{background-color:#D2E4FC;font-weight:bold;font-size:20px;border-color:#b0c1ff;text-align:center;vertical-align:top}
+.tg .tg-mue8{font-weight:bold;font-size:16px;background-color:#b0c1ff;border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-fnp1{background-color:#D2E4FC;font-style:italic;font-size:13px;font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif !important;;color:#6665cd;border-color:inherit;text-align:center}
+@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}</style>
+<table class="ui fixed inverted grey celled structured table">
+  <thead>
+  <tr class="center aligned">
+      <th colspan="2">Freshmen</th>
+      <th colspan="2">Sophomore</th>
+      <th colspan="2">Junior</th>
+      <th colspan="2">Senior</th>
+  </tr>
+  <tr class="center aligned">
+      <th>Fall</th>
+      <th>Spring</th>
+      <th>Fall</th>
+      <th>Spring</th>
+      <th>Fall</th>
+      <th>Spring</th>
+      <th>Fall</th>
+      <th>Spring</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="selectable center aligned">
+        <a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}"><p>Add</p></a>
+      </td>
+      <td class="selectable center aligned">
+        <a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add</a>
+      </td>
+      <td class="selectable center aligned">
+        <a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add</a>
+      </td>
+      <td class="selectable center aligned">
+        <a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add</a>
+      </td>
+      <td class="selectable center aligned">
+        <a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add</a>
+      </td>
+      <td class="selectable center aligned">
+        <a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add</a>
+      </td>
+      <td class="selectable center aligned">
+        <a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add</a>
+      </td>
+      <td class="selectable center aligned">
+        <a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add</a>
+      </td>
+    </tr>
+    <tr>
+      <td class="selectable center aligned">
+        <a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add</a>
+      </td>
+      <td class="selectable center aligned">
+        <a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add</a>
+      </td>
+      <td class="selectable center aligned">
+        <a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add</a>
+      </td>
+      <td class="selectable center aligned">
+        <a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add</a>
+      </td>
+      <td class="selectable center aligned">
+        <a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add</a>
+      </td>
+      <td class="selectable center aligned">
+        <a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add</a>
+      </td>
+      <td class="selectable center aligned">
+        <a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add</a>
+      </td>
+      <td class="selectable center aligned">
+        <a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add</a>
+      </td>
+    </tr>
+    <tr>
+      <td class="selectable center aligned">
+        <a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add</a>
+      </td>
+      <td class="selectable center aligned">
+        <a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add</a>
+      </td>
+      <td class="selectable center aligned">
+        <a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add</a>
+      </td>
+      <td class="selectable center aligned">
+        <a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add</a>
+      </td>
+      <td class="selectable center aligned">
+        <a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add</a>
+      </td>
+      <td class="selectable center aligned">
+        <a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add</a>
+      </td>
+      <td class="selectable center aligned">
+        <a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add</a>
+      </td>
+      <td class="selectable center aligned">
+        <a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add</a>
+      </td>
+    </tr>
+    <tr>
+      <td class="selectable center aligned">
+        <a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add</a>
+      </td>
+      <td class="selectable center aligned">
+        <a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add</a>
+      </td>
+      <td class="selectable center aligned">
+        <a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add</a>
+      </td>
+      <td class="selectable center aligned">
+        <a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add</a>
+      </td>
+      <td class="selectable center aligned">
+        <a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add</a>
+      </td>
+      <td class="selectable center aligned">
+        <a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add</a>
+      </td>
+      <td class="selectable center aligned">
+        <a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add</a>
+      </td>
+      <td class="selectable center aligned">
+        <a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add</a>
+      </td>
+    </tr>
+    <tr>
+      <td class="selectable center aligned">
+        <a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add</a>
+      </td>
+      <td class="selectable center aligned">
+        <a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add</a>
+      </td>
+      <td class="selectable center aligned">
+        <a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add</a>
+      </td>
+      <td class="selectable center aligned">
+        <a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add</a>
+      </td>
+      <td class="selectable center aligned">
+        <a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add</a>
+      </td>
+      <td class="selectable center aligned">
+        <a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add</a>
+      </td>
+      <td class="selectable center aligned">
+        <a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add</a>
+      </td>
+      <td class="selectable center aligned">
+        <a href="{{pathFor 'Add_Stuff_Page' _id=stuff._id}}">Add</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+      {{else}}
+        {{> Loading}}
+      {{/if}}
+    </div>
+  {{/If_Logged_In}}
+</template>
